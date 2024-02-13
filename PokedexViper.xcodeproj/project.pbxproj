@@ -13,6 +13,9 @@
 		AA884B722B7B1CDE00263151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA884B702B7B1CDE00263151 /* Main.storyboard */; };
 		AA884B742B7B1CE100263151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA884B732B7B1CE100263151 /* Assets.xcassets */; };
 		AA884B772B7B1CE100263151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA884B752B7B1CE100263151 /* LaunchScreen.storyboard */; };
+		AA884B832B7B1DDF00263151 /* PokemonWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B822B7B1DDF00263151 /* PokemonWebService.swift */; };
+		AA884B852B7B1EE300263151 /* PokemonUrlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */; };
+		AA884B872B7B2BCC00263151 /* ErrorWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B862B7B2BCC00263151 /* ErrorWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AA884B732B7B1CE100263151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA884B762B7B1CE100263151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA884B782B7B1CE100263151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA884B822B7B1DDF00263151 /* PokemonWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonWebService.swift; sourceTree = "<group>"; };
+		AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUrlConfiguration.swift; sourceTree = "<group>"; };
+		AA884B862B7B2BCC00263151 /* ErrorWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		AA884B692B7B1CDE00263151 /* PokedexViper */ = {
 			isa = PBXGroup;
 			children = (
+				AA884B812B7B1D3100263151 /* Services */,
+				AA884B802B7B1D2400263151 /* Views */,
+				AA884B7E2B7B1D0900263151 /* Modules */,
 				AA884B6A2B7B1CDE00263151 /* AppDelegate.swift */,
 				AA884B6C2B7B1CDE00263151 /* SceneDelegate.swift */,
 				AA884B6E2B7B1CDE00263151 /* ViewController.swift */,
@@ -65,6 +74,30 @@
 				AA884B782B7B1CE100263151 /* Info.plist */,
 			);
 			path = PokedexViper;
+			sourceTree = "<group>";
+		};
+		AA884B7E2B7B1D0900263151 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AA884B802B7B1D2400263151 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA884B812B7B1D3100263151 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B822B7B1DDF00263151 /* PokemonWebService.swift */,
+				AA884B862B7B2BCC00263151 /* ErrorWebService.swift */,
+				AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA884B6F2B7B1CDE00263151 /* ViewController.swift in Sources */,
+				AA884B852B7B1EE300263151 /* PokemonUrlConfiguration.swift in Sources */,
 				AA884B6B2B7B1CDE00263151 /* AppDelegate.swift in Sources */,
+				AA884B832B7B1DDF00263151 /* PokemonWebService.swift in Sources */,
 				AA884B6D2B7B1CDE00263151 /* SceneDelegate.swift in Sources */,
+				AA884B872B7B2BCC00263151 /* ErrorWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +330,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +358,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
