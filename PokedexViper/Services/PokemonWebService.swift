@@ -8,17 +8,16 @@
 import Foundation
 
 protocol NetworkApiProtocol : AnyObject {
-   // var urlConfiguration =
-    
+    var urlConfiguration : PokemonUrlConfiguration { get set }
+    func consumeService<T : Decodable>(withComplitionHandler handler : @escaping (Result <T,ErrorWebService>) -> Void)
 }
 
-class PokemonWebService {
+class PokemonWebService : NetworkApiProtocol {
     var urlConfiguration : PokemonUrlConfiguration
     
     init(urlConfiguration: PokemonUrlConfiguration) {
         self.urlConfiguration = urlConfiguration
     }
-    
     public func consumeService<T>(withComplitionHandler handler : @escaping (Result <T,ErrorWebService>) -> Void) where T : Decodable  {  //T tipado
         guard let url = urlConfiguration.configureUrl() else {
             handler(.failure(.wrongUrl))

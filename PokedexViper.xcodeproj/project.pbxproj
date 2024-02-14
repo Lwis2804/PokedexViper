@@ -16,6 +16,7 @@
 		AA884B832B7B1DDF00263151 /* PokemonWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B822B7B1DDF00263151 /* PokemonWebService.swift */; };
 		AA884B852B7B1EE300263151 /* PokemonUrlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */; };
 		AA884B872B7B2BCC00263151 /* ErrorWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B862B7B2BCC00263151 /* ErrorWebService.swift */; };
+		AA884B892B7C6E6500263151 /* PokemonPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B882B7C6E6400263151 /* PokemonPaths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AA884B822B7B1DDF00263151 /* PokemonWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonWebService.swift; sourceTree = "<group>"; };
 		AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUrlConfiguration.swift; sourceTree = "<group>"; };
 		AA884B862B7B2BCC00263151 /* ErrorWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWebService.swift; sourceTree = "<group>"; };
+		AA884B882B7C6E6400263151 /* PokemonPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonPaths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				AA884B822B7B1DDF00263151 /* PokemonWebService.swift */,
 				AA884B862B7B2BCC00263151 /* ErrorWebService.swift */,
+				AA884B882B7C6E6400263151 /* PokemonPaths.swift */,
 				AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */,
 			);
 			path = Services;
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA884B892B7C6E6500263151 /* PokemonPaths.swift in Sources */,
 				AA884B6F2B7B1CDE00263151 /* ViewController.swift in Sources */,
 				AA884B852B7B1EE300263151 /* PokemonUrlConfiguration.swift in Sources */,
 				AA884B6B2B7B1CDE00263151 /* AppDelegate.swift in Sources */,
