@@ -7,9 +7,6 @@
 
 import Foundation
 
-protocol PathsProtocol {
-    var pathToUse : String { get } //variable de lectura
-}
 
 struct PokemonUrlConfiguration {
     var metodo : String

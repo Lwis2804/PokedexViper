@@ -17,6 +17,12 @@
 		AA884B852B7B1EE300263151 /* PokemonUrlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */; };
 		AA884B872B7B2BCC00263151 /* ErrorWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B862B7B2BCC00263151 /* ErrorWebService.swift */; };
 		AA884B892B7C6E6500263151 /* PokemonPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B882B7C6E6400263151 /* PokemonPaths.swift */; };
+		AA884B902B7C73EE00263151 /* AllPokemonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B8B2B7C73EE00263151 /* AllPokemonPresenter.swift */; };
+		AA884B912B7C73EE00263151 /* AllPokemonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B8C2B7C73EE00263151 /* AllPokemonRouter.swift */; };
+		AA884B922B7C73EE00263151 /* AllPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B8D2B7C73EE00263151 /* AllPokemonViewController.swift */; };
+		AA884B932B7C73EE00263151 /* AllPokemonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B8E2B7C73EE00263151 /* AllPokemonProtocols.swift */; };
+		AA884B942B7C73EE00263151 /* AllPokemonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B8F2B7C73EE00263151 /* AllPokemonInteractor.swift */; };
+		AA884B9C2B7C76B200263151 /* AllPokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA884B9B2B7C76B200263151 /* AllPokemonResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUrlConfiguration.swift; sourceTree = "<group>"; };
 		AA884B862B7B2BCC00263151 /* ErrorWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWebService.swift; sourceTree = "<group>"; };
 		AA884B882B7C6E6400263151 /* PokemonPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonPaths.swift; sourceTree = "<group>"; };
+		AA884B8B2B7C73EE00263151 /* AllPokemonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPokemonPresenter.swift; sourceTree = "<group>"; };
+		AA884B8C2B7C73EE00263151 /* AllPokemonRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPokemonRouter.swift; sourceTree = "<group>"; };
+		AA884B8D2B7C73EE00263151 /* AllPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPokemonViewController.swift; sourceTree = "<group>"; };
+		AA884B8E2B7C73EE00263151 /* AllPokemonProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPokemonProtocols.swift; sourceTree = "<group>"; };
+		AA884B8F2B7C73EE00263151 /* AllPokemonInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPokemonInteractor.swift; sourceTree = "<group>"; };
+		AA884B9B2B7C76B200263151 /* AllPokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPokemonResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 		AA884B7E2B7B1D0900263151 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AA884B8A2B7C73C200263151 /* AllPokemon */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -101,6 +114,67 @@
 				AA884B842B7B1EE300263151 /* PokemonUrlConfiguration.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AA884B8A2B7C73C200263151 /* AllPokemon */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B9A2B7C769B00263151 /* Entity */,
+				AA884B992B7C768F00263151 /* Router */,
+				AA884B982B7C768000263151 /* Protocols */,
+				AA884B972B7C757600263151 /* Presenter */,
+				AA884B962B7C756700263151 /* Interactor */,
+				AA884B952B7C754D00263151 /* View */,
+			);
+			path = AllPokemon;
+			sourceTree = "<group>";
+		};
+		AA884B952B7C754D00263151 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B8D2B7C73EE00263151 /* AllPokemonViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA884B962B7C756700263151 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B8F2B7C73EE00263151 /* AllPokemonInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AA884B972B7C757600263151 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B8B2B7C73EE00263151 /* AllPokemonPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA884B982B7C768000263151 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B8E2B7C73EE00263151 /* AllPokemonProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AA884B992B7C768F00263151 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B8C2B7C73EE00263151 /* AllPokemonRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AA884B9A2B7C769B00263151 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AA884B9B2B7C76B200263151 /* AllPokemonResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +248,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA884B922B7C73EE00263151 /* AllPokemonViewController.swift in Sources */,
 				AA884B892B7C6E6500263151 /* PokemonPaths.swift in Sources */,
 				AA884B6F2B7B1CDE00263151 /* ViewController.swift in Sources */,
+				AA884B932B7C73EE00263151 /* AllPokemonProtocols.swift in Sources */,
 				AA884B852B7B1EE300263151 /* PokemonUrlConfiguration.swift in Sources */,
 				AA884B6B2B7B1CDE00263151 /* AppDelegate.swift in Sources */,
+				AA884B942B7C73EE00263151 /* AllPokemonInteractor.swift in Sources */,
 				AA884B832B7B1DDF00263151 /* PokemonWebService.swift in Sources */,
+				AA884B912B7C73EE00263151 /* AllPokemonRouter.swift in Sources */,
+				AA884B9C2B7C76B200263151 /* AllPokemonResponse.swift in Sources */,
 				AA884B6D2B7B1CDE00263151 /* SceneDelegate.swift in Sources */,
+				AA884B902B7C73EE00263151 /* AllPokemonPresenter.swift in Sources */,
 				AA884B872B7B2BCC00263151 /* ErrorWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
