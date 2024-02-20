@@ -10,9 +10,15 @@ import Foundation
 
 struct AllPokemonResponse : Codable {
     var id : Int?
-    var names : [AllPokemonNames]?
+    var pokemon_entries : [AllPokemonEntries]?
 }
 
-struct AllPokemonNames : Codable {
+struct AllPokemonEntries : Codable {
+    var entry_number : Int?
+    var pokemon_species : AllPokemonSpecies?
+}
+
+struct AllPokemonSpecies : Codable {
     var name : String?
+    var url : String?
 }

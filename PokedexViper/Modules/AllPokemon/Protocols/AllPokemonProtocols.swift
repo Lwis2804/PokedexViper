@@ -4,7 +4,7 @@
 //  
 //  ViperTemplate v.0.0.1 - (2023, NS-Bionick Development Team)
 
-import Foundation
+import Foundation      // CAMINOS Y REGLAS
 
 /**
  Sugerencias en el llamado de Funciones de Vista a Presenter

@@ -18,6 +18,7 @@ class PokemonWebService : NetworkApiProtocol {
     init(urlConfiguration: PokemonUrlConfiguration) {
         self.urlConfiguration = urlConfiguration
     }
+    
     public func consumeService<T>(withComplitionHandler handler : @escaping (Result <T,ErrorWebService>) -> Void) where T : Decodable  {  //T tipado
         guard let url = urlConfiguration.configureUrl() else {
             handler(.failure(.wrongUrl))
@@ -35,3 +36,4 @@ class PokemonWebService : NetworkApiProtocol {
         }.resume()
     }
 }
+

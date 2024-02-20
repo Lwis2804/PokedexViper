@@ -6,13 +6,12 @@
 
 import Foundation
 
-class AllPokemonInteractor: AllPokemon_PresenterToInteractorProtocol {
+class AllPokemonInteractor: AllPokemon_PresenterToInteractorProtocol {    // consumo
     weak var presenter: AllPokemon_InteractorToPresenterProtocol?
     private var metodo : String = "https"
     private var host : String = "pokeapi.co"
     
     func getAllPokemonToInteractor() {
- //       let service : NetworkApiProtocol = PokemonWebService(urlConfiguration: PokemonUrlConfiguration(metodo: metodo, host: host, path: PokemonPaths.getAllPokemon.getPath()))
         let service : NetworkApiProtocol = PokemonWebService(urlConfiguration: PokemonUrlConfiguration(metodo: metodo, host: host, path: PokemonPaths.getAllPokemon.getPath()))
         
         service.consumeService { [weak self] (result:Result<AllPokemonResponse, ErrorWebService>) in
@@ -23,9 +22,6 @@ class AllPokemonInteractor: AllPokemon_PresenterToInteractorProtocol {
                 print(error.localizedDescription)
             }
         }
-        
     }
-    
-    
 }
 
